@@ -46,6 +46,7 @@ public class Show {
     private List<ActiveViewer> activeViewers;
     private String playingNow;
     private String playingNext;
+    private String playingNextFromSchedule;
 
     @JsonIgnore
     private String serviceToken;
