@@ -10,6 +10,7 @@ import java.util.List;
 @Builder
 public class Vote {
     private Sequence sequence;
+    private SequenceGroup sequenceGroup;
     private Integer votes;
     private List<String> viewersVoted;
     private LocalDateTime lastVoteTime;
