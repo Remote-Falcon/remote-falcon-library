@@ -27,4 +27,5 @@ public class Preference {
     private Integer sequencesPlayed;
     private String pageTitle;
     private String pageIconUrl;
+    private Boolean showOnMap;
 }
