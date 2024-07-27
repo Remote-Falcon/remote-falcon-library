@@ -28,4 +28,5 @@ public class Preference {
     private String pageTitle;
     private String pageIconUrl;
     private Boolean showOnMap;
+    private String selfHostedRedirectUrl;
 }
