@@ -10,6 +10,6 @@ import java.util.List;
 public class Request {
     private Sequence sequence;
     private Integer position;
-    private List<String> viewersRequested;
+    private String viewerRequested;
     private Boolean ownerRequested;
 }
