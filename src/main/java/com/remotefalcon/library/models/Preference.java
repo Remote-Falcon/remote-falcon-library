@@ -17,6 +17,7 @@ public class Preference {
     private Float showLongitude;
     private Float allowedRadius;
     private Boolean checkIfVoted;
+    private Boolean checkIfRequested;
     private Boolean psaEnabled;
     private Integer psaFrequency;
     private Integer jukeboxRequestLimit;
