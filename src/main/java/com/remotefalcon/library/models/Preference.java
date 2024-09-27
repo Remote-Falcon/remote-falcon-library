@@ -5,6 +5,8 @@ import com.remotefalcon.library.enums.ViewerControlMode;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Set;
+
 @Data
 @Builder
 public class Preference {
@@ -30,4 +32,5 @@ public class Preference {
     private String pageIconUrl;
     private Boolean showOnMap;
     private String selfHostedRedirectUrl;
+    private Set<String> blockedViewerIps;
 }
