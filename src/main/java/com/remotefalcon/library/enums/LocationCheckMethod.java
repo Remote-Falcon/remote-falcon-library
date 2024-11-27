@@ -8,5 +8,6 @@ public enum LocationCheckMethod {
     CODE("CODE"),
     NONE("NONE");
 
+    @SuppressWarnings("unused")
     private final String locationCheckMethod;
 }

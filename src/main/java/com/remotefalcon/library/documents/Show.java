@@ -47,6 +47,8 @@ public class Show {
     private String playingNow;
     private String playingNext;
     private String playingNextFromSchedule;
+    private Sequence playingNowSequence;
+    private Sequence playingNextSequence;
 
     @JsonIgnore
     private String serviceToken;

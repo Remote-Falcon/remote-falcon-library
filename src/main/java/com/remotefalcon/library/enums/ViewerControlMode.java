@@ -7,5 +7,6 @@ public enum ViewerControlMode {
   JUKEBOX("jukebox"),
   VOTING("voting");
 
+  @SuppressWarnings("unused")
   private final String viewerControlMode;
 }
