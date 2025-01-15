@@ -4,9 +4,11 @@ import com.remotefalcon.library.enums.LocationCheckMethod;
 import com.remotefalcon.library.enums.ViewerControlMode;
 import lombok.Builder;
 import lombok.Data;
+import org.eclipse.microprofile.graphql.Type;
 
 import java.util.Set;
 
+@Type
 @Data
 @Builder
 public class Preference {

@@ -36,6 +36,16 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.15.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-mongodb-panache</artifactId>
+            <version>3.17.7</version>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-graphql</artifactId>
+            <version>3.17.7</version>
+        </dependency>
     </dependencies>
 
     <build>

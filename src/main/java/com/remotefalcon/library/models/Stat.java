@@ -2,10 +2,12 @@ package com.remotefalcon.library.models;
 
 import lombok.Builder;
 import lombok.Data;
+import org.eclipse.microprofile.graphql.Type;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Type
 @Data
 @Builder
 public class Stat {
@@ -14,6 +16,7 @@ public class Stat {
     private List<VotingWin> votingWin;
     private List<Page> page;
 
+    @Type
     @Data
     @Builder
     public static class Jukebox {
@@ -21,6 +24,7 @@ public class Stat {
         private LocalDateTime dateTime;
     }
 
+    @Type
     @Data
     @Builder
     public static class Page {
@@ -28,6 +32,7 @@ public class Stat {
         private LocalDateTime dateTime;
     }
 
+    @Type
     @Data
     @Builder
     public static class Voting {
@@ -35,6 +40,7 @@ public class Stat {
         private LocalDateTime dateTime;
     }
 
+    @Type
     @Data
     @Builder
     public static class VotingWin {
