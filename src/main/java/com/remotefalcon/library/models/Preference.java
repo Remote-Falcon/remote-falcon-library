@@ -4,6 +4,8 @@ import com.remotefalcon.library.enums.LocationCheckMethod;
 import com.remotefalcon.library.enums.ViewerControlMode;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.eclipse.microprofile.graphql.Type;
 
 import java.util.Set;
@@ -11,6 +13,8 @@ import java.util.Set;
 @Type
 @Data
 @Builder
+@Getter
+@Setter
 public class Preference {
     private Boolean viewerControlEnabled;
     private ViewerControlMode viewerControlMode;

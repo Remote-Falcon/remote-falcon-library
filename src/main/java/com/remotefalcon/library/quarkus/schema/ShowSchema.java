@@ -1,25 +1,23 @@
-package com.remotefalcon.library.quarkus.entity;
+package com.remotefalcon.library.quarkus.schema;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.remotefalcon.library.enums.ShowRole;
 import com.remotefalcon.library.models.*;
-import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.eclipse.microprofile.graphql.Ignore;
 import org.eclipse.microprofile.graphql.Type;
-import org.springframework.data.annotation.Id;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Type
-@MongoEntity(collection = "show")
 @Data
 @Builder
-public class Show {
+@Getter
+@Setter
+public class ShowSchema {
     private String showToken;
     private String email;
     @Ignore
