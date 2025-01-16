@@ -1,22 +1,27 @@
-package com.remotefalcon.library.quarkus.entity;
+package com.remotefalcon.library.quarkus.schema;
 
 import com.remotefalcon.library.enums.ShowRole;
 import com.remotefalcon.library.models.*;
-import io.quarkus.mongodb.panache.common.MongoEntity;
-import lombok.*;
-import org.springframework.data.annotation.Transient;
+import jakarta.json.bind.annotation.JsonbTransient;
+import lombok.Builder;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import org.eclipse.microprofile.graphql.Ignore;
+import org.eclipse.microprofile.graphql.Type;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Type
 @Data
 @Builder
 @Getter
 @Setter
-@MongoEntity(collection = "show")
-public class ShowEntity {
+public class Show {
     private String showToken;
     private String email;
+    @Ignore
     private String password;
     private String showName;
     private String showSubdomain;
@@ -48,6 +53,5 @@ public class ShowEntity {
     private Sequence playingNowSequence;
     private Sequence playingNextSequence;
 
-    @Transient
     private String serviceToken;
 }

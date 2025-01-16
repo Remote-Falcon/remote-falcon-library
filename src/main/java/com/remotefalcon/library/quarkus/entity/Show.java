@@ -1,26 +1,24 @@
-package com.remotefalcon.library.quarkus.schema;
+package com.remotefalcon.library.quarkus.entity;
 
 import com.remotefalcon.library.enums.ShowRole;
 import com.remotefalcon.library.models.*;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.eclipse.microprofile.graphql.Ignore;
-import org.eclipse.microprofile.graphql.Type;
+import io.quarkus.mongodb.panache.common.MongoEntity;
+import lombok.*;
+import io.quarkus.mongodb.panache.PanacheMongoEntity;
+import org.springframework.data.annotation.Transient;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Type
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Builder
 @Getter
 @Setter
-public class ShowSchema {
+@MongoEntity(collection = "show")
+public class Show extends PanacheMongoEntity {
     private String showToken;
     private String email;
-    @Ignore
     private String password;
     private String showName;
     private String showSubdomain;
@@ -52,6 +50,6 @@ public class ShowSchema {
     private Sequence playingNowSequence;
     private Sequence playingNextSequence;
 
-    @Ignore
+    @Transient
     private String serviceToken;
 }
