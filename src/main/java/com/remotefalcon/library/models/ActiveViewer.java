@@ -1,9 +1,9 @@
 package com.remotefalcon.library.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 import org.eclipse.microprofile.graphql.Type;
 
 import java.time.LocalDateTime;
@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 @Type
 @Data
 @Builder
-@Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ActiveViewer {
     private String ipAddress;
     private LocalDateTime visitDateTime;

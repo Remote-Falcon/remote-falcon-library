@@ -2,10 +2,10 @@ package com.remotefalcon.library.models;
 
 import com.remotefalcon.library.enums.LocationCheckMethod;
 import com.remotefalcon.library.enums.ViewerControlMode;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 import org.eclipse.microprofile.graphql.Type;
 
 import java.util.Set;
@@ -13,8 +13,8 @@ import java.util.Set;
 @Type
 @Data
 @Builder
-@Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Preference {
     private Boolean viewerControlEnabled;
     private ViewerControlMode viewerControlMode;

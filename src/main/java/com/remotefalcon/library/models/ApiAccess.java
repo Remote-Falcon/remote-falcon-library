@@ -1,16 +1,16 @@
 package com.remotefalcon.library.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 import org.eclipse.microprofile.graphql.Type;
 
 @Type
 @Data
 @Builder
-@Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ApiAccess {
     private Boolean apiAccessActive;
     private String apiAccessToken;

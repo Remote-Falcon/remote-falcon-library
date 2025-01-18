@@ -1,9 +1,9 @@
 package com.remotefalcon.library.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 import org.eclipse.microprofile.graphql.Type;
 
 import java.time.LocalDateTime;
@@ -12,20 +12,20 @@ import java.util.List;
 @Type
 @Data
 @Builder
-@Getter
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Stat {
-    private List<Jukebox> jukebox;
-    private List<Voting> voting;
-    private List<VotingWin> votingWin;
-    private List<Page> page;
+    private List<JukeboxStat> jukeboxStat;
+    private List<VotingStat> votingStat;
+    private List<VotingWinStat> votingWinStat;
+    private List<PageStat> pageStat;
 
     @Type
     @Data
     @Builder
-    @Getter
-    @Setter
-    public static class Jukebox {
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class JukeboxStat {
         private String name;
         private LocalDateTime dateTime;
     }
@@ -33,9 +33,9 @@ public class Stat {
     @Type
     @Data
     @Builder
-    @Getter
-    @Setter
-    public static class Page {
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class PageStat {
         private String ip;
         private LocalDateTime dateTime;
     }
@@ -43,9 +43,9 @@ public class Stat {
     @Type
     @Data
     @Builder
-    @Getter
-    @Setter
-    public static class Voting {
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class VotingStat {
         private String name;
         private LocalDateTime dateTime;
     }
@@ -53,9 +53,9 @@ public class Stat {
     @Type
     @Data
     @Builder
-    @Getter
-    @Setter
-    public static class VotingWin {
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class VotingWinStat {
         private String name;
         private Integer total;
         private LocalDateTime dateTime;

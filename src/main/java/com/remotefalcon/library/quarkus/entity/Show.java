@@ -5,20 +5,26 @@ import com.remotefalcon.library.models.*;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.*;
 import io.quarkus.mongodb.panache.PanacheMongoEntity;
-import org.springframework.data.annotation.Transient;
+import org.bson.codecs.pojo.annotations.BsonIgnore;
+import org.eclipse.microprofile.graphql.Description;
+import org.eclipse.microprofile.graphql.Ignore;
+import org.eclipse.microprofile.graphql.Type;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Builder
-@Getter
-@Setter
+@EqualsAndHashCode(callSuper = true)
+@Type
+@Description("Top level Show details")
 @MongoEntity(collection = "show")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Show extends PanacheMongoEntity {
     private String showToken;
     private String email;
+    @Ignore
     private String password;
     private String showName;
     private String showSubdomain;
@@ -50,6 +56,6 @@ public class Show extends PanacheMongoEntity {
     private Sequence playingNowSequence;
     private Sequence playingNextSequence;
 
-    @Transient
+    @BsonIgnore
     private String serviceToken;
 }
