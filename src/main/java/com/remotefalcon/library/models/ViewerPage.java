@@ -11,7 +11,7 @@ import org.eclipse.microprofile.graphql.Type;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Page {
+public class ViewerPage {
     private String name;
     private Boolean active;
     private String html;

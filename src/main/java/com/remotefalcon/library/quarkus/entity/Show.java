@@ -45,7 +45,7 @@ public class Show extends PanacheMongoEntity {
     private List<Sequence> sequences;
     private List<SequenceGroup> sequenceGroups;
     private List<PsaSequence> psaSequences;
-    private List<Page> pages;
+    private List<ViewerPage> pages;
     private Stat stats;
     private List<Request> requests;
     private List<Vote> votes;

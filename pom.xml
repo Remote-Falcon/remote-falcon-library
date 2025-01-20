@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.remotefalcon</groupId>
     <artifactId>remote-falcon-library</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-LOCAL</version>
     <packaging>jar</packaging>
     <name>remote-falcon-library</name>
 
