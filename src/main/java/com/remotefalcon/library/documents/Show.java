@@ -50,6 +50,8 @@ public class Show {
     private Sequence playingNowSequence;
     private Sequence playingNextSequence;
 
+    private List<Notification> notifications;
+
     @JsonIgnore
     private String serviceToken;
 }
