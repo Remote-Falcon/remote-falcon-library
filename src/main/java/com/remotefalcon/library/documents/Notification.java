@@ -13,5 +13,4 @@ public class Notification {
     private String id;
     private String subject;
     private String message;
-    private Boolean read;
 }
