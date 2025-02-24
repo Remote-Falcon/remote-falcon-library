@@ -1,5 +1,6 @@
 package com.remotefalcon.library.models;
 
+import com.remotefalcon.library.documents.Notification;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +13,7 @@ import org.eclipse.microprofile.graphql.Type;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ShowNotification {
-    private String id;
+    private Notification notification;
     private Boolean read;
     private Boolean deleted;
 }
