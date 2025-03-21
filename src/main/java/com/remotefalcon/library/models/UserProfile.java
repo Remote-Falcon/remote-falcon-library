@@ -16,4 +16,5 @@ public class UserProfile {
     private String lastName;
     private String facebookUrl;
     private String youtubeUrl;
+    private String expoPushToken;
 }
