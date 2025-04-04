@@ -1,14 +1,10 @@
 package com.remotefalcon.library.models;
 
-import jakarta.json.bind.annotation.JsonbProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.bson.codecs.pojo.annotations.BsonProperty;
-import org.eclipse.microprofile.graphql.Name;
 import org.eclipse.microprofile.graphql.Type;
-import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
 import java.util.List;

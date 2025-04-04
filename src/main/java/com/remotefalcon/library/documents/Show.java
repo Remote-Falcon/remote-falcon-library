@@ -49,6 +49,7 @@ public class Show {
     private String playingNextFromSchedule;
     private Sequence playingNowSequence;
     private Sequence playingNextSequence;
+    private LocalDateTime lastFppHeartbeat;
 
     private List<ShowNotification> showNotifications;
 

@@ -39,4 +39,5 @@ public class Preference {
     private Boolean showOnMap;
     private String selfHostedRedirectUrl;
     private Set<String> blockedViewerIps;
+    private NotificationPreference notificationPreferences;
 }
