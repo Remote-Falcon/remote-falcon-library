@@ -1,5 +1,6 @@
 package com.remotefalcon.library.documents;
 
+import com.remotefalcon.library.enums.NotificationType;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -15,6 +16,7 @@ public class Notification {
     private String id;
     private String uuid;
     private LocalDateTime createdDate;
+    private NotificationType type;
     private String preview;
     private String subject;
     private String message;
