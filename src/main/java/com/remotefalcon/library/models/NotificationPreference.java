@@ -14,5 +14,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class NotificationPreference {
     private Boolean enableFppHeartbeat;
-    private Integer fppHeartbeatNotifyAfterMinutes;
+    private Boolean fppHeartbeatIfControlEnabled;
+    private Integer fppHeartbeatRenotifyAfterMinutes;
 }
