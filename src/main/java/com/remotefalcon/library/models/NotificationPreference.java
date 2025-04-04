@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Type
 @Data
 @Builder
@@ -16,4 +18,5 @@ public class NotificationPreference {
     private Boolean enableFppHeartbeat;
     private Boolean fppHeartbeatIfControlEnabled;
     private Integer fppHeartbeatRenotifyAfterMinutes;
+    private LocalDateTime fppHeartbeatLastNotification;
 }
