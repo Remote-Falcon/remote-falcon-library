@@ -55,6 +55,7 @@ public class Show extends PanacheMongoEntity {
     private String playingNextFromSchedule;
     private Sequence playingNowSequence;
     private Sequence playingNextSequence;
+    private LocalDateTime lastFppHeartbeat;
 
     @BsonIgnore
     private String serviceToken;
