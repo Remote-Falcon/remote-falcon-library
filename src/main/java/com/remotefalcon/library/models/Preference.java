@@ -17,6 +17,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class Preference {
     private Boolean viewerControlEnabled;
+    private Boolean viewerPageViewOnly;
     private ViewerControlMode viewerControlMode;
     private Boolean resetVotes;
     private Integer jukeboxDepth;
