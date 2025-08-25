@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.eclipse.microprofile.graphql.Type;
 
+import java.time.LocalDateTime;
+
 @Type
 @Data
 @Builder
@@ -17,4 +19,6 @@ public class UserProfile {
     private String facebookUrl;
     private String youtubeUrl;
     private String expoPushToken;
+    private Integer totalTokens;
+    private LocalDateTime lastTokenResetDate;
 }
