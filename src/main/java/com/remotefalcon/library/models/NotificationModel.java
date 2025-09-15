@@ -14,7 +14,6 @@ import com.remotefalcon.library.enums.NotificationType;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NotificationModel {
-  private String id;
   private String uuid;
   private LocalDateTime createdDate;
   private NotificationType type;
